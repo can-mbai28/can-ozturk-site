@@ -188,9 +188,13 @@ nav.links a{text-decoration:none;color:var(--muted)} nav.links a:hover{color:var
 .bp-cut::before{left:-8px}.bp-cut::after{right:-8px}
 .bp-who{display:flex;justify-content:space-between;align-items:center;gap:14px}
 .bp-face{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid #F4F1EA;box-shadow:0 0 0 4px rgba(244,182,63,.35);flex:none}
-.bp-name{font-weight:800;font-size:19px;letter-spacing:.04em}.bp-name span{color:#D7D0F0;font-weight:700}
+.bp-name{font-weight:800;font-size:19px;letter-spacing:.04em}
+.bp-big{display:block;font-weight:800;font-size:19px;letter-spacing:.04em}
+.bp-name.bp-sm{font-weight:700;font-size:14px;letter-spacing:.06em}.bp-name span{color:#D7D0F0;font-weight:700}
 .bp-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .bp-chips span{background:#F4F1EA;color:#1A1242;border-radius:7px;padding:5px 9px;font-size:11.5px;font-weight:700;letter-spacing:.06em}
+.bp-chips span.t-gold{background:linear-gradient(135deg,#F7DE8B 0%,#D9A83A 55%,#B8862A 100%);color:#2A1C05;box-shadow:inset 0 1px 0 rgba(255,255,255,.45)}
+.bp-chips span.t-emerald{background:linear-gradient(135deg,#2FA36B 0%,#11784A 60%,#0B5A37 100%);color:#EFFBF4;box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
 .bp-grid{display:grid;grid-template-columns:repeat(5,auto);justify-content:space-between;gap:8px;margin-top:18px}
 .bp-grid b{display:block;font-weight:800;font-size:18px;margin-top:2px;letter-spacing:.02em}
 .bp-grid .seat{color:var(--accent)}
@@ -363,7 +367,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="seeking"><i></i>Seeking summer 2027 internships across technology, strategy and innovation</div>
     </div>
     <aside class="bp" aria-label="Boarding pass">
-      <div class="bp-top"><div class="bp-brand"><span>Kellogg <span class="nc">MBAi</span><small>Career route</small></span></div></div>
+      <div class="bp-top"><div class="bp-brand"><span><b class="bp-big">Can Ozturk</b><small>Career route</small></span></div></div>
       <div class="bp-route">
         <div><small>EVANSTON</small><b>EVN</b><small>CURRENT STOP</small></div>
         <div class="bp-dash" aria-hidden="true"><svg viewBox="-17 -12 34 24"><path d="M15,0 C15,-0.9 14,-1.5 12.5,-1.5 L4,-1.5 L-4,-12 L-6.6,-12 L-2.2,-1.5 L-10,-1.5 L-13,-5.6 L-14.9,-5.6 L-13.4,-1.3 L-14.6,-1 Q-15.5,0 -14.6,1 L-13.4,1.3 L-14.9,5.6 L-13,5.6 L-10,1.5 L-2.2,1.5 L-6.6,12 L-4,12 L4,1.5 L12.5,1.5 C14,1.5 15,0.9 15,0 Z M2.6,-6 L-0.4,-6 L-0.4,-4.4 L2.6,-4.4 Q3.3,-5.2 2.6,-6 Z M2.6,4.4 L-0.4,4.4 L-0.4,6 L2.6,6 Q3.3,5.2 2.6,4.4 Z"/></svg></div>
@@ -371,8 +375,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </div>
       <div class="bp-via"><small>FLOWN SO FAR:</small>IST · LHR · LAF · DFW · ORD</div>
       <div class="bp-cut" aria-hidden="true"></div>
-      <div class="bp-who"><div><div class="bp-name">CAN OZTURK <span>*MBAi</span></div>
-      <div class="bp-chips"><span>PRIORITY BOARDING</span><span>KELLOGG MBAi</span></div></div></div>
+      <div class="bp-who"><div><div class="bp-name bp-sm">KELLOGG MBAi</div>
+      <div class="bp-chips"><span>PRIORITY BOARDING</span><span class="t-gold">STAR ALLIANCE GOLD</span><span class="t-emerald">ONEWORLD EMERALD</span></div></div></div>
       <div class="bp-grid">
         <div><small>TERM</small><b>KELLOGG</b></div><div><small>GATE</small><b>KGH</b></div><div><small>GROUP</small><b>1</b></div><div><small>CLASS</small><b>’28</b></div><div><small>SEAT</small><b class="seat">7F</b></div>
       </div>

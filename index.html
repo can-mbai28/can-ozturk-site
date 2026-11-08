@@ -286,6 +286,10 @@ nav.links a{text-decoration:none;color:var(--muted)} nav.links a:hover{color:var
 @media (max-width:880px){.off{grid-template-columns:1fr}}
 .off h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:34px;line-height:.95;margin:6px 0 8px}
 .off p{margin:0;color:var(--muted)}
+#off .eyebrow,#contact .eyebrow{color:var(--accent)}
+#off .off>div{background:var(--bg-2);border:1px solid rgba(109,75,179,.45);border-radius:12px;padding:18px 20px 20px;box-shadow:inset 0 3px 0 var(--nu-2)}
+#contact .btn.ghost{background:rgba(78,42,132,.24);border-color:rgba(109,75,179,.75);color:#F4F1EA}
+#contact .btn.ghost:hover{background:var(--nu);border-color:var(--nu-2)}
 .contact{padding-block:20px 80px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px}
 @media (max-width:880px){.contact{grid-template-columns:1fr;gap:24px}}
 .contact .big{font-size:clamp(21px,2.4vw,28px);font-weight:600;margin:0 0 18px}
@@ -333,6 +337,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .shots figcaption{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.35}
 .team{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .team span{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:8px 12px;border:1px solid var(--rule);border-radius:999px;color:var(--ink)}
+/* project pages: purple and gold accents */
+.proj .bar .eyebrow,.proj .ph-hero .eyebrow{color:var(--accent)}
+.proj .ph-hero{background:radial-gradient(ellipse 70% 90% at 92% 0%,rgba(78,42,132,.42),transparent 70%)}
+.proj .ph-hero h2{color:#F4F1EA}
+.proj h2:focus{outline:none}
+.meta span{border-color:rgba(109,75,179,.75);background:rgba(78,42,132,.24);color:var(--nu-ink)}
+.meta span b{color:#F4F1EA}
+.pgrid h3::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--accent);margin-bottom:16px}
+.feat div{border-color:rgba(109,75,179,.45);box-shadow:inset 0 3px 0 var(--nu-2)}
+.feat b{color:#F4F1EA}
+.dec li{border-left-color:var(--accent)}
+.team span{border-color:rgba(109,75,179,.75);background:rgba(78,42,132,.24)}
+.shots img{border-color:rgba(109,75,179,.55)}
 /* Lightbox */
 .lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.78);display:grid;place-items:center;padding:max(20px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
 .lb[hidden],.detail[hidden]{display:none}
